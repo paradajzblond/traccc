@@ -242,7 +242,7 @@ def main():
                     "--material-file=%s" % params["input"]["material_file"],
                     "--input-events=1",
                     "--check-performance",
-                    "--use-acts-geom-source=on",
+                    "--use-acts-geom-source=off",
                 ]
 
                 for k, v in params["config"].items():
