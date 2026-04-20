@@ -10,6 +10,9 @@
 traccc_add_library( traccc_examples_sycl examples_sycl SHARED
    "include/traccc/examples/full_chain_algorithm.hpp"
    "src/full_chain_algorithm.cpp" )
+traccc_add_library( traccc_examples_sycl examples_sycl SHARED
+   "include/traccc/examples/full_chain_algorithm.hpp"
+   "src/full_chain_algorithm.cpp" )
 target_link_libraries( traccc_examples_sycl
    PUBLIC vecmem::core vecmem::sycl detray::core detray::detectors
           traccc::core traccc::device_common traccc::sycl
@@ -26,6 +29,28 @@ traccc_add_executable( throughput_mt_sycl "src/throughput_mt.cpp"
                   detray::detectors detray::io traccc::io traccc::performance
                   traccc::core traccc::device_common traccc::sycl
                   traccc::options traccc_examples_sycl )
+
+                  # SYCL seeding executable(s).
+traccc_add_executable( seeding_example_sycl "src/seeding_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+traccc_add_executable( seq_example_sycl "src/seq_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+                  # SYCL seeding executable(s).
+traccc_add_executable( seeding_example_sycl "src/seeding_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+traccc_add_executable( seq_example_sycl "src/seq_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
 
                   # SYCL seeding executable(s).
 traccc_add_executable( seeding_example_sycl "src/seeding_example_sycl.cpp"
