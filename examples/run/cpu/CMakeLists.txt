@@ -44,4 +44,8 @@ traccc_add_executable( truth_fitting_example "src/truth_fitting_example.cpp"
 
 traccc_add_executable( misaligned_truth_fitting_example "src/misaligned_truth_fitting_example.cpp"
    LINK_LIBRARIES vecmem::core detray::io detray::detectors traccc::core
+<<<<<<< HEAD
    traccc::io traccc::performance traccc::options traccc::examples_common )
+=======
+   traccc::io traccc::performance traccc::options traccc::examples_common )
+>>>>>>> 99d711d7 (updating to main)
