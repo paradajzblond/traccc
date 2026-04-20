@@ -40,3 +40,25 @@ traccc_add_executable( seq_example_sycl "src/seq_example_sycl.cpp"
    LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
                   traccc::core traccc::device_common traccc::sycl
                   traccc::performance traccc_examples_common )
+
+                  # SYCL seeding executable(s).
+traccc_add_executable( seeding_example_sycl "src/seeding_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+traccc_add_executable( seq_example_sycl "src/seq_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+                  # SYCL seeding executable(s).
+traccc_add_executable( seeding_example_sycl "src/seeding_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )
+
+traccc_add_executable( seq_example_sycl "src/seq_example_sycl.cpp"
+   LINK_LIBRARIES traccc::options vecmem::core vecmem::sycl traccc::io
+                  traccc::core traccc::device_common traccc::sycl
+                  traccc::performance traccc_examples_common )

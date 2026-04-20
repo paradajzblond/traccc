@@ -6,6 +6,7 @@
  */
 
 // Project include(s).
+#include "traccc/examples/make_magnetic_field.hpp"
 #include "traccc/ambiguity_resolution/greedy_ambiguity_resolution_algorithm.hpp"
 #include "traccc/clusterization/clusterization_algorithm.hpp"
 #include "traccc/cuda/ambiguity_resolution/greedy_ambiguity_resolution_algorithm.hpp"
